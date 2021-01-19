@@ -13,9 +13,9 @@ function loadCity() {
         city[0]['biome'] = 'capital';
         city[0]['tax_rate'] = 1;
         city[0]['timer'] = 60;
-        city[0]['storage_cap'] = 100;
+        city[0]['storage_cap'] = 1000000;
         city[0]['prospecting'] = false;
-        city[0]['storage'] = { lumber: 0, stone: 0 };
+        city[0]['storage'] = { lumber: 500000, stone: 500000 };
         city[0]['map'] = generateMap('capital',10);
         city[0]['size'] = 2;
         city[0]['scale'] = 50;
