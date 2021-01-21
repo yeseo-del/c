@@ -993,7 +993,7 @@ function loadProspect(modal, id, x, y, z) {
         container.append(header);
         var price = 0;
         var row = $('<div class="row"></div>');
-        price = inflation(town,'mine',((town['mine'].length + Object.keys(town['prospecting_offer']).length) * 100));
+        price = inflation(town,'mine',((town['mine'].length + Object.keys(town['prospecting_offer']).length) * 0));
         var cost = $('<div class="col">$' + price + '</div>');
         row.append(cost);
         container.append(row);
