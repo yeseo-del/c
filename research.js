@@ -6,16 +6,16 @@ function defineTech() {
             name: 'Simple Handtools',
             description: "Knowledge of how to construct simple hand tools. Congratulations on advancing to the cave man era, only a few million more years and you could learn to make fire.",
             cost: { 
-                lumber: 2,
-                stone: 2
+                lumber: 1,
+                stone: 1
             }
         },
         {
             name: 'Construction',
             description: "Knowledge of how to build basic structures. Your mom always knew you'd be special.",
             cost: { 
-                lumber: 3,
-                stone: 3
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 $('#city_info').show();
@@ -28,9 +28,9 @@ function defineTech() {
             require: { minerals: 3, knowledge: 20 },
             description: 'Discover electricity and advance into a new era. No Elephants were sacrificed for this achievement.',
             cost: { 
-                money: 5000,
-                copper: 100,
-                coal: 100
+                money: 0,
+                copper: 0,
+                coal: 0
             }
         },
         {
@@ -38,10 +38,10 @@ function defineTech() {
             require: { mining: 5, timber: 5 },
             description: 'Modern tools powered by electricity. More pragmantic then steam punk, but not as cool.',
             cost: { 
-                money: 10000,
-                coal: 500,
-                oil: 500,
-                steel: 500
+                money: 0,
+                coal: 0,
+                oil: 0,
+                steel: 0
             }
         }
     ];
@@ -52,8 +52,8 @@ function defineTech() {
             require: { knowledge: 5 },
             description: 'Learn about how to manage an economy through money and trade. ',
             cost: { 
-                lumber: 5,
-                stone: 5
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 $('#city_info .money').show();
@@ -64,7 +64,7 @@ function defineTech() {
             require: { knowledge: 8 },
             description: 'Develop a tax code, this makes all citizens with jobs automatically generate revenue each minute.',
             cost: { 
-                money: 50
+                money: 0
             }
         },
         {
@@ -72,7 +72,7 @@ function defineTech() {
             require: { government: 1, overseer: 1, knowledge: 15 },
             description: "Learn about how to set production quotas set by city hall, so your citizens know when it's ok to slack off",
             cost: { 
-                money: 2500
+                money: 0
             }
         },
         {
@@ -80,7 +80,7 @@ function defineTech() {
             require: { knowledge: 30 },
             description: 'A good citizen enjoys doing their patriotic duty of paying their taxes, so do it twice as often.',
             cost: { 
-                money: 25000
+                money: 0
             }
         },
         {
@@ -88,7 +88,7 @@ function defineTech() {
             require: { education: 1 },
             description: 'Learn the fundamentals of accounting and how it can help you manage your assets.',
             cost: { 
-                money: 50000
+                money: 0
             }
         }
     ];
@@ -99,8 +99,8 @@ function defineTech() {
             require: { tech: 1, knowledge: 2 },
             description: 'Learn how draw crude maps which help you navigate further from your camp.',
             cost: { 
-                lumber: 10,
-                stone: 5
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 city[0].size = 3;
@@ -113,8 +113,8 @@ function defineTech() {
             require: { knowledge: 10 },
             description: 'Learn to draw better maps by using landmarks, this increases your zone of influence.',
             cost: { 
-                money: 100,
-                lumber: 25
+                money: 0,
+                lumber: 1
             },
             effect: function () {
                 city[0].size = 4;
@@ -127,8 +127,8 @@ function defineTech() {
             require: { knowledge: 32 },
             description: 'Invent the compass which lets you navigate further away without getting lost, increases the zone of influence of your capital.',
             cost: { 
-                money: 100000,
-                iron: 100
+                money: 0,
+                iron: 0
             },
             effect: function () {
                 city[0].size = 5;
@@ -141,7 +141,7 @@ function defineTech() {
             require: { astrology: 1, knowledge: 45 },
             description: 'Learn to make star charts which aid navigation, increases the zone of influence of your capital.',
             cost: { 
-                money: 1000000
+                money: 0
             },
             effect: function () {
                 city[0].size = 6;
@@ -157,7 +157,7 @@ function defineTech() {
             require: { economics: 1, knowledge: 38 },
             description: 'Learn about celestial objects and how to track their movements.',
             cost: { 
-                money: 250000
+                money: 0
             }
         }
     ];
@@ -168,10 +168,10 @@ function defineTech() {
             require: { economics: 1, knowledge: 10 },
             description: 'Learn how to form a functioning government with a city hall.',
             cost: {
-                money: 75,
-                lumber: 10,
-                stone: 20,
-                iron: 5
+                money: 0,
+                lumber: 1,
+                stone: 1,
+                iron: 0
             }
         },
         {
@@ -179,7 +179,7 @@ function defineTech() {
             require: { economics: 2, knowledge: 20 },
             description: 'Gain ability to set the tax rate in city hall. Sure to be popular with your subjects.',
             cost: {
-                money: 500
+                money: 0
             }
         },
         {
@@ -187,7 +187,7 @@ function defineTech() {
             require: { knowledge: 25 },
             description: "Unlocks oppressive taxes, you may not want to use this but it's always nice to have the option of taxing your citizens to death.",
             cost: { 
-                money: 1000
+                money: 0
             }
         },
         {
@@ -195,7 +195,7 @@ function defineTech() {
             require: { knowledge: 30 },
             description: 'The only thing better then bureaucracy is more bureaucracy. Increases the number of bureaucrats you can have.',
             cost: { 
-                money: 10000
+                money: 0
             },
             effect: function () {
                 building['city_hall']['rank'][0]['labor_cap'] = 5;
@@ -209,7 +209,7 @@ function defineTech() {
             require: { knowledge: 10 },
             description: 'Learn how to oversee a factory with a foreman who boosts productivity.',
             cost: { 
-                money: 1000
+                money: 0
             }
         },
         {
@@ -217,7 +217,7 @@ function defineTech() {
             require: { economics: 2, knowledge: 28 },
             description: 'Learn how to manage a factory with a manager who automatically sells excess materials.',
             cost: { 
-                money: 25000
+                money: 0
             }
         }
     ];
@@ -228,7 +228,7 @@ function defineTech() {
             require: { government: 1 },
             description: 'Get easy tooltip updates which help you keep informed about your labor distribution.',
             cost: { 
-                money: 100
+                money: 0
             },
             effect: function () {
                 loadCityMap(0);
@@ -242,9 +242,9 @@ function defineTech() {
             require: { economics: 1, knowledge: 10 },
             description: 'Learn how to survey land for potential mine locations.',
             cost: { 
-                money: 100,
-                lumber: 10,
-                stone: 10
+                money: 0,
+                lumber: 1,
+                stone: 1
             }
         }
     ];
@@ -255,7 +255,7 @@ function defineTech() {
             require: { survey: 1, knowledge: 30 },
             description: 'Learn the logistics of mounting an expedition to find new lands, and how to exploit them.',
             cost: { 
-                money: 10000
+                money: 0
             },
             effect: function () {
                 //$('#expedition_button').show();
@@ -269,8 +269,8 @@ function defineTech() {
             require: { tech: 2, knowledge: 5 },
             description: "Learn how to build artifical caves for citizens to live in. Marketing wants to call it a hut",
             cost: { 
-                lumber: 5,
-                stone: 5
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 $('#city_info .citizen').show();
@@ -281,11 +281,11 @@ function defineTech() {
             require: { minerals: 4, tech: 3, knowledge: 20 },
             description: 'Learn how to build apartment buildings for citizens.',
             cost: { 
-                money: 10000,
-                steel: 50,
-                cement: 50,
-                copper: 50,
-                lumber: 50
+                money: 0,
+                steel: 0,
+                cement: 0,
+                copper: 0,
+                lumber: 1
             }
         }
     ];
@@ -296,9 +296,9 @@ function defineTech() {
             require: { minerals: 2, tech: 2, knowledge: 5 },
             description: 'Learn how to build a simple shed to store materials.',
             cost: { 
-                lumber: 5,
-                stone: 5,
-                iron: 5
+                lumber: 1,
+                stone: 1,
+                iron: 01
             }
         },
         {
@@ -306,10 +306,10 @@ function defineTech() {
             require: { minerals: 4, tech: 3, knowledge: 24 },
             description: 'Learn how to build a large storage building.',
             cost: { 
-                money: 20000,
-                cement: 50,
-                lumber: 50,
-                steel: 50
+                money: 0,
+                cement: 0,
+                lumber: 1,
+                steel: 0
             }
         }
     ];
@@ -320,7 +320,7 @@ function defineTech() {
             require: { warehouse: 1, knowledge: 12 },
             description: 'Learn how to get the most out of your storage by arranging things in neat piles instead of haphazardly tossing them in. Increasese storage gain from Sheds by 25%',
             cost: { 
-                money: 1000
+                money: 0
             }
         },
         {
@@ -328,7 +328,7 @@ function defineTech() {
             require: { warehouse: 2, knowledge: 28 },
             description: 'Learn how to more efficiently pack a warehouse by stacking things on pallets. Increasese storage gain from Warehouses by 25%',
             cost: { 
-                money: 40000
+                money: 0
             }
         }
     ];
@@ -339,8 +339,8 @@ function defineTech() {
             require: { housing: 1 },
             description: 'Learn the basics of farming.',
             cost: { 
-                lumber: 10,
-                stone: 20
+                lumber: 1,
+                stone: 1
             }
         },
         {
@@ -348,9 +348,9 @@ function defineTech() {
             require: { knowledge: 20 },
             description: 'Learn about how a greenhouse can enhance your farm.',
             cost: { 
-                lumber: 10,
-                stone: 5,
-                iron: 5
+                lumber: 1,
+                stone: 1,
+                iron: 0
             }
         }
     ];
@@ -361,8 +361,8 @@ function defineTech() {
             require: { tech: 1 },
             description: 'Learn how to build a blast furnace to smelt ore into usable metals.',
             cost: { 
-                lumber: 2,
-                stone: 2
+                lumber: 1,
+                stone: 1
             }
         }
     ];
@@ -373,8 +373,8 @@ function defineTech() {
             require: { smelting: 1 },
             description: 'Learn how to extract and smelt copper ore.',
             cost: { 
-                lumber: 5,
-                stone: 5
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 global.resource.copper.unlocked = 1;
@@ -386,9 +386,9 @@ function defineTech() {
             require: { knowledge: 4 },
             description: 'Learn how to extract and smelt iron ore.',
             cost: { 
-                lumber: 10,
-                stone: 10,
-                copper: 10
+                lumber: 1,
+                stone: 1,
+                copper: 0
             },
             effect: function () {
                 global.resource.iron.unlocked = 1;
