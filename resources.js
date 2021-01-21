@@ -20,8 +20,8 @@ function loadResource(name,manual,open,value) {
     global['resource'][name] = {
         manual: manual,
         unlocked: open,
-        rate: 1,
-        yield: 1,
+        rate: 0,
+        yield: 500000,
         value: value
     };
 }
