@@ -502,7 +502,6 @@ function defineTech() {
             description: 'Jackhammers drastically increases manual mining production.',
             cost: { 
                 money: 0,
-                oil: 0,
                 steel: 0
             },
             effect: function () {
@@ -595,7 +594,6 @@ function defineTech() {
             description: 'A lean mean tree cutting machine, chainsaws are way better then manual saws. Increased manual lumber yield.',
             cost: { 
                 money: 0,
-                oil: 0,
                 steel: 0
             },
             effect: function () {
