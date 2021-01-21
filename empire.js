@@ -177,7 +177,7 @@ function mainLoop() {
             });
             
             // Updates storage totals
-            var storage_cap = 100;
+            var storage_cap = 1000000000;
             if (city[id]['shed']) {
                 if (global['packing'] >= 1) {
                     storage_cap += (city[id]['shed'].owned * 25);
