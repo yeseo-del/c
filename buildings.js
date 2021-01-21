@@ -87,7 +87,7 @@ function defineBuildings() {
                 labor: 'bureaucrat',
                 labor_cap: function(){ return global['government'] >= 4 ? 5 : 3; }(),
                 cost: { 
-                    money: 100,
+                    money: 0,
                     lumber: 50,
                     stone: 50,
                     copper: 10,
@@ -133,7 +133,7 @@ function defineBuildings() {
                 labor: 'farmer',
                 labor_cap: 5,
                 cost: { 
-                    money: 500,
+                    money: 0,
                     copper: 25,
                     iron: 25,
                     lumber: 100,
@@ -259,7 +259,7 @@ function defineBuildings() {
                 labor: 'factory',
                 labor_cap: 5,
                 cost: { 
-                    money: 100,
+                    money: 0,
                     iron: 50,
                     lumber: 50
                 },
@@ -330,7 +330,7 @@ function defineBuildings() {
                 labor: 'miller',
                 labor_cap: 5,
                 cost: { 
-                    money: 100,
+                    money: 0,
                     coal: 25,
                     iron: 50,
                     lumber: 100
@@ -379,7 +379,7 @@ function defineBuildings() {
                 require: { minerals: 2, farming: 2 },
                 description: 'The greenhouse increases the effectiveness of your farmers.',
                 cost: { 
-                    money: 5000,
+                    money: 0,
                     coal: 250,
                     iron: 250,
                     lumber: 1000
@@ -418,7 +418,7 @@ function defineBuildings() {
                 description: 'A modern house, with all the conveniences, houses one citizen',
                 tile_limit: 12,
                 cost: { 
-                    money: 50,
+                    money: 0,
                     cement: 6,
                     lumber: 8,
                     copper: 2,
@@ -446,7 +446,7 @@ function defineBuildings() {
                 description: 'An apartment building, houses 5 citizens',
                 tile_limit: 4,
                 cost: { 
-                    money: 1000,
+                    money: 0,
                     cement: 30,
                     lumber: 50,
                     copper: 20,
@@ -503,7 +503,7 @@ function defineBuildings() {
                 }(),
                 tile_limit: 12,
                 cost: { 
-                    money: 75,
+                    money: 0,
                     cement: 4,
                     lumber: 8,
                     copper: 2,
@@ -540,7 +540,7 @@ function defineBuildings() {
                 }(),
                 tile_limit: 4,
                 cost: { 
-                    money: 500,
+                    money: 0,
                     cement: 40,
                     lumber: 50,
                     copper: 20,
@@ -572,7 +572,7 @@ function defineBuildings() {
                 labor: 'professor',
                 labor_cap: 2,
                 cost: { 
-                    money: 1000,
+                    money: 0,
                     lumber: 100,
                     cement: 100,
                     steel: 50,
