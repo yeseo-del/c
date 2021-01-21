@@ -34,7 +34,8 @@ var biomes = {
         minerals: {
             copper: 0.65,
             iron: 0.7,
-            coal: 0.4
+            coal: 0.4,
+            aluminium: 0.99
         },
         explore: false,
         tile_color: '#59ae69'
@@ -65,7 +66,7 @@ var biomes = {
             iron: 1.0,
             coal: 0.5,
             gold: 0.3,
-            aluminium: 0.3,
+            aluminium: 0.99,
             titanium: 0.2
         },
         oil: 0.5,
@@ -83,7 +84,7 @@ var biomes = {
             iron: 1.25,
             coal: 0.85,
             gold: 0.2,
-            aluminium: 0.5,
+            aluminium: 0.99,
             titanium: 0.3
         },
         oil: 0.05,
@@ -100,7 +101,7 @@ var biomes = {
             copper: 0.25,
             iron: 0.3,
             coal: 0.25,
-            aluminium: 0.15,
+            aluminium: 0.99,
             gold: 0.1
         },
         explore: true,
@@ -117,7 +118,7 @@ var biomes = {
             iron: 0.15,
             coal: 0.15,
             gold: 0.1,
-            aluminium: 0.2,
+            aluminium: 0.99,
             titanium: 0.15
         },
         explore: true,
