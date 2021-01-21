@@ -488,7 +488,6 @@ function defineTech() {
             cost: { 
                 money: 0,
                 lumber: 1,
-                aluminium: 0
             },
             effect: function () {
                 global.resource.stone.rate = 6;
@@ -504,7 +503,6 @@ function defineTech() {
             cost: { 
                 money: 0,
                 oil: 0,
-                aluminium: 0,
                 steel: 0
             },
             effect: function () {
@@ -585,7 +583,6 @@ function defineTech() {
             description: 'A better saw with an aluminium frame. Increases manual wood cutting speed.',
             cost: { 
                 money: 0,
-                aluminium: 0,
                 steel: 0
             },
             effect: function () {
@@ -599,7 +596,6 @@ function defineTech() {
             cost: { 
                 money: 0,
                 oil: 0,
-                aluminium: 0,
                 steel: 0
             },
             effect: function () {
