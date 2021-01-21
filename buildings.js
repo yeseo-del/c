@@ -14,8 +14,8 @@ function defineBuildings() {
                 labor: 'miner',
                 labor_cap: 10,
                 cost: { 
-                    lumber: 50,
-                    iron: 25
+                    lumber: 1,
+                    iron: 1
                 }
             }
         ],
@@ -88,10 +88,10 @@ function defineBuildings() {
                 labor_cap: function(){ return global['government'] >= 4 ? 5 : 3; }(),
                 cost: { 
                     money: 0,
-                    lumber: 50,
-                    stone: 50,
-                    copper: 10,
-                    iron: 10
+                    lumber: 1,
+                    stone: 1,
+                    copper: 1,
+                    iron: 1
                 }
             }
         ]
@@ -111,8 +111,8 @@ function defineBuildings() {
                 labor: 'trader',
                 labor_cap: 1,
                 cost: { 
-                    lumber: 20,
-                    stone: 20
+                    lumber: 1,
+                    stone: 1
                 }
             }
         ]
@@ -134,10 +134,10 @@ function defineBuildings() {
                 labor_cap: 5,
                 cost: { 
                     money: 0,
-                    copper: 25,
-                    iron: 25,
-                    lumber: 100,
-                    stone: 100
+                    copper: 1,
+                    iron: 1,
+                    lumber: 1,
+                    stone: 1
                 }
             }
         ]
@@ -165,9 +165,9 @@ function defineBuildings() {
                 labor: 'miller',
                 labor_cap: 5,
                 cost: { 
-                    copper: 10,
-                    iron: 25,
-                    lumber: 25
+                    copper: 1,
+                    iron: 1,
+                    lumber: 1
                 }
             }
         ],
@@ -213,8 +213,8 @@ function defineBuildings() {
                 labor: 'quarry',
                 labor_cap: 5,
                 cost: { 
-                    iron: 30,
-                    lumber: 40
+                    iron: 1,
+                    lumber: 1
                 }
             }
         ],
@@ -260,8 +260,8 @@ function defineBuildings() {
                 labor_cap: 5,
                 cost: { 
                     money: 0,
-                    iron: 50,
-                    lumber: 50
+                    iron: 1,
+                    lumber: 1
                 },
                 effect: function (town, building) {
                     global.resource.cement.unlocked = 1;
@@ -307,8 +307,8 @@ function defineBuildings() {
                 require: { smelting: 1 },
                 description: 'The Blast Furnance is used to process various ores into metals.',
                 cost: { 
-                    stone: 5,
-                    lumber: 5
+                    stone: 1,
+                    lumber: 1
                 }
             }
         ]
@@ -331,9 +331,9 @@ function defineBuildings() {
                 labor_cap: 5,
                 cost: { 
                     money: 0,
-                    coal: 25,
-                    iron: 50,
-                    lumber: 100
+                    coal: 1,
+                    iron: 1,
+                    lumber: 1
                 }
             }
         ],
@@ -380,9 +380,9 @@ function defineBuildings() {
                 description: 'The greenhouse increases the effectiveness of your farmers.',
                 cost: { 
                     money: 0,
-                    coal: 250,
-                    iron: 250,
-                    lumber: 1000
+                    coal: 1,
+                    iron: 1,
+                    lumber: 1
                 }
             }
         ]
@@ -404,8 +404,8 @@ function defineBuildings() {
                 limit: 12,
                 tile_limit: 12,
                 cost: { 
-                    stone: 8,
-                    lumber: 12
+                    stone: 1,
+                    lumber: 1
                 },
                 effect: function (town, building) {
                     town['citizen']['max'] += 1;
@@ -419,10 +419,10 @@ function defineBuildings() {
                 tile_limit: 12,
                 cost: { 
                     money: 0,
-                    cement: 6,
-                    lumber: 8,
-                    copper: 2,
-                    iron: 3
+                    cement: 1,
+                    lumber: 1,
+                    copper: 1,
+                    iron: 1
                 },
                 effect: function (town, building) {
                     town['citizen']['max'] += 1;
@@ -447,10 +447,10 @@ function defineBuildings() {
                 tile_limit: 4,
                 cost: { 
                     money: 0,
-                    cement: 30,
-                    lumber: 50,
-                    copper: 20,
-                    steel: 50
+                    cement: 1,
+                    lumber: 1,
+                    copper: 1,
+                    steel: 1
                 },
                 effect: function (town, building) {
                     town['citizen']['max'] += 5;
@@ -479,9 +479,9 @@ function defineBuildings() {
                 limit: 12,
                 tile_limit: 12,
                 cost: { 
-                    stone: 6,
-                    lumber: 6,
-                    iron: 2
+                    stone: 1,
+                    lumber: 1,
+                    iron: 1
                 },
                 effect: function (town, building) {
                     if (global['packing'] >= 1) {
@@ -504,10 +504,10 @@ function defineBuildings() {
                 tile_limit: 12,
                 cost: { 
                     money: 0,
-                    cement: 4,
-                    lumber: 8,
-                    copper: 2,
-                    iron: 2
+                    cement: 1,
+                    lumber: 1,
+                    copper: 1,
+                    iron: 1
                 },
                 effect: function (town, building) {
                     if (global['packing'] >= 1) {
@@ -541,10 +541,10 @@ function defineBuildings() {
                 tile_limit: 4,
                 cost: { 
                     money: 0,
-                    cement: 40,
-                    lumber: 50,
-                    copper: 20,
-                    steel: 30
+                    cement: 1,
+                    lumber: 1,
+                    copper: 1,
+                    steel: 1
                 },
                 effect: function (town, building) {
                     if (global['packing'] >= 2) {
@@ -573,10 +573,10 @@ function defineBuildings() {
                 labor_cap: 2,
                 cost: { 
                     money: 0,
-                    lumber: 100,
-                    cement: 100,
-                    steel: 50,
-                    copper: 50
+                    lumber: 1,
+                    cement: 1,
+                    steel: 1,
+                    copper: 1
                 }
             }
         ]
