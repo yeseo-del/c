@@ -400,9 +400,9 @@ function defineTech() {
             require: { knowledge: 6 },
             description: 'Learn how to extract coal.',
             cost: { 
-                lumber: 10,
-                stone: 10,
-                iron: 10
+                lumber: 1,
+                stone: 1,
+                iron: 0
             },
             effect: function () {
                 global.resource.coal.unlocked = 1;
@@ -414,9 +414,9 @@ function defineTech() {
             require: { knowledge: 8 },
             description: 'Learn how to turn iron and coal into steel.',
             cost: { 
-                lumber: 10,
-                coal: 10,
-                iron: 25
+                lumber: 1,
+                coal: 1,
+                iron: 0
             },
             effect: function () {
                 global.resource.steel.unlocked = 1;
@@ -431,8 +431,8 @@ function defineTech() {
             require: { tech: 1 },
             description: 'A crude pickaxe made from a stone head attached to a stick. Increases manual mining speed.',
             cost: { 
-                lumber: 2,
-                stone: 2
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 global.resource.stone.rate = 2;
@@ -443,8 +443,8 @@ function defineTech() {
             require: { minerals: 1 },
             description: 'A pickaxe made from a wooden shaft with a copper head. Increases manual mining speed.',
             cost: { 
-                lumber: 5,
-                copper: 5
+                lumber: 1,
+                copper: 0
             },
             effect: function () {
                 global.resource.stone.rate = 3;
@@ -456,8 +456,8 @@ function defineTech() {
             require: { minerals: 2 },
             description: 'A pickaxe made from a wooden shaft with an iron head. Increases manual mining speed.',
             cost: { 
-                lumber: 10,
-                iron: 10
+                lumber: 1,
+                iron: 0
             },
             effect: function () {
                 global.resource.stone.rate = 4;
@@ -471,9 +471,9 @@ function defineTech() {
             require: { minerals: 4 },
             description: 'A pickaxe made from a wooden shaft with a steel head. Increases manual mining speed.',
             cost: { 
-                money: 100,
-                lumber: 100,
-                steel: 25
+                money: 0,
+                lumber: 1,
+                steel: 0
             },
             effect: function () {
                 global.resource.stone.rate = 5;
@@ -486,9 +486,9 @@ function defineTech() {
             name: 'Lightweight Pickaxe',
             description: 'A pickaxe made from an aluminium shaft with a steel head. Increases manual mining speed.',
             cost: { 
-                money: 1000,
-                lumber: 250,
-                aluminium: 100
+                money: 0,
+                lumber: 1,
+                aluminium: 0
             },
             effect: function () {
                 global.resource.stone.rate = 6;
@@ -502,10 +502,10 @@ function defineTech() {
             require: { tech: 4 },
             description: 'Jackhammers drastically increases manual mining production.',
             cost: { 
-                money: 5000,
-                oil: 2500,
-                aluminium: 5000,
-                steel: 25000
+                money: 0,
+                oil: 0,
+                aluminium: 0,
+                steel: 0
             },
             effect: function () {
                 global.resource.stone.rate = 7;
@@ -524,8 +524,8 @@ function defineTech() {
             require: { tech: 1 },
             description: 'A crude axe made from a stone head attached to a stick. Increases manual wood cutting speed.',
             cost: { 
-                lumber: 2,
-                stone: 2
+                lumber: 1,
+                stone: 1
             },
             effect: function () {
                 global.resource.lumber.rate = 2;
@@ -536,8 +536,8 @@ function defineTech() {
             require: { minerals: 1 },
             description: 'An axe made from a wooden shaft with a copper head. Increases manual wood cutting speed.',
             cost: { 
-                lumber: 5,
-                copper: 5
+                lumber: 1,
+                copper: 0
             },
             effect: function () {
                 global.resource.lumber.rate = 3;
@@ -548,8 +548,8 @@ function defineTech() {
             require: { minerals: 2 },
             description: 'An axe made from a wooden shaft with a copper head. Increases manual wood cutting speed.',
             cost: { 
-                lumber: 10,
-                iron: 10
+                lumber: 1,
+                iron: 0
             },
             effect: function () {
                 global.resource.lumber.rate = 4;
@@ -560,9 +560,9 @@ function defineTech() {
             require: { minerals: 4 },
             description: 'An axe made from a wooden shaft with a copper head. Increases manual wood cutting speed.',
             cost: { 
-                money: 100,
-                lumber: 100,
-                steel: 25
+                money: 0,
+                lumber: 1,
+                steel: 0
             },
             effect: function () {
                 global.resource.lumber.rate = 5;
@@ -572,9 +572,9 @@ function defineTech() {
             name: 'Crosscut Saw',
             description: 'The next evolution in cutting down trees, saws are more efficent then axes. Increases manual wood cutting speed.',
             cost: { 
-                money: 1000,
-                lumber: 250,
-                steel: 100
+                money: 0,
+                lumber: 1,
+                steel: 0
             },
             effect: function () {
                 global.resource.lumber.rate = 6;
@@ -584,9 +584,9 @@ function defineTech() {
             name: 'Bow Saw',
             description: 'A better saw with an aluminium frame. Increases manual wood cutting speed.',
             cost: { 
-                money: 2500,
-                aluminium: 2500,
-                steel: 5000
+                money: 0,
+                aluminium: 0,
+                steel: 0
             },
             effect: function () {
                 global.resource.lumber.rate = 7;
@@ -597,10 +597,10 @@ function defineTech() {
             require: { tech: 4 },
             description: 'A lean mean tree cutting machine, chainsaws are way better then manual saws. Increased manual lumber yield.',
             cost: { 
-                money: 5000,
-                oil: 2500,
-                aluminium: 5000,
-                steel: 25000
+                money: 0,
+                oil: 0,
+                aluminium: 0,
+                steel: 0
             },
             effect: function () {
                 global.resource.lumber.yield = 2;
@@ -614,7 +614,7 @@ function defineTech() {
             require: { knowledge: 30 },
             description: "What came first, the teacher or the pupil? We're not sure how the first educator came to be without an education either but this research aims to find out.",
             cost: { 
-                money: 2000
+                money: 0
             }
         }
     ];
