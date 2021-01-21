@@ -49,7 +49,7 @@ var biomes = {
             copper: 0.25,
             iron: 0.25,
             coal: 0.25,
-            aluminium: 0.25,
+            aluminium: 0.99,
             gold: 0.25
         },
         explore: true,
