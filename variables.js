@@ -46,11 +46,11 @@ var biomes = {
         lumber: 1.0,
         stone: 1.0,
         minerals: {
-            copper: 0.65,
-            iron: 0.7,
-            coal: 0.4,
-            aluminium: 0.3,
-            gold: 0.1
+            copper: 0.25,
+            iron: 0.25,
+            coal: 0.25,
+            aluminium: 0.25,
+            gold: 0.25
         },
         explore: true,
         tile_color: '#59ae69'
