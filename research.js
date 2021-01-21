@@ -40,7 +40,6 @@ function defineTech() {
             cost: { 
                 money: 0,
                 coal: 0,
-                oil: 0,
                 steel: 0
             }
         }
